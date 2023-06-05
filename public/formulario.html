@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://jptechnologies.com.br/wp-content/uploads/2022/04/logo-JP.png">
+    <link rel="stylesheet" href="css/styleformulario.css">
+    <title>Trabalho</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="https://jptechnologies.com.br/" target="_blank"><img class="logo"
+                src="https://drive.google.com/uc?id=1SP0GUW-7gVjLfpKipeyzxOgZ3hshNlaG"></a>
+        <nav class="menu">
+            <a class="item" href="paginainicial.html">Início</a>
+            <a class="item" href="formulario.html">Formulário</a>
+            <a class="item" href="perguntas.html">Configurações</a>
+            <a class="item" href="index.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <center>
+            <div id="section">
+                <div class="figure-container">
+                    <h1 id="pesquisa" class="pesquisa_de_satisfacao">Pesquisa de Satisfação</h1>
+                    <h3 id="pergunta" class="pergunta">#</h3>
+                    <div class="caras">
+                        <figure id="pessimo" onclick="exibirForm(this, 'pessimo-filled')"></figure>
+                        <figure id="ruim" onclick="exibirForm(this, 'ruim-filled')"></figure>
+                        <figure id="regular" onclick="exibirForm(this, 'regular-filled')"></figure>
+                        <figure id="bom" onclick="exibirForm(this, 'bom-filled')"></figure>
+                        <figure id="otimo" onclick="exibirForm(this, 'otimo-filled')"></figure>
+                    </div>
+                </div>
+                <form action="#" name="meuForm" id="meuForm" class="hidden">
+                    <div class="form-container">
+                        <div id="text">
+                            <textarea cols="30" placeholder="Escreva uma observação" id="box"></textarea>
+                        </div>
+                        <div id="btn">
+                            <button id="enviarBtn" onclick="enviarForm()" type="button">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+                <div id="post" class="hidden">
+                    <h5>Obrigado pela avaliação!</h5>
+                    <button id="edit" onclick="editarForm()">Editar</button>
+                </div>
+            </div>
+
+        </center>
+    </main>
+
+
+    <footer class="inferior">
+        <center>
+            <h1 id="contato">Contatos</h1>
+            <a class="invisibleButton" href="cadastro.html">JPtechnologies | 2023</a>
+            <p>R. Dr. Gilberto Studart, 55 - Cocó, Fortaleza - CE (sala 805 - Torre Norte)
+            <p>CEP: 60192-010 | CNPJ: 35.721.625/0001-27 </p>
+            <p>Telefone: <a href="tel:+55 (85) 3085-4522">+55 (85) 3085-4522</a> | Email: <a
+                    href="mailto:jptechnologies.ce@gmail.com">jptechnologies.ce@gmail.com</a></p>
+            <br>
+            <p>Seja redirecionado à página de suporte:
+                <a id="sup"
+                    href="https://jptechnologies.com.br/index.php/suporte/">https://jptechnologies.com.br/index.php/suporte/</a>
+            </p>
+        </center>
+    </footer>
+    <script src="formulario.js"></script>
+</body>
+
+</html>

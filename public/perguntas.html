@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://drive.google.com/uc?id=1GuCLUsW2pwzgl7MxKJcUuDWOraiun-Rb">
+    <link rel="stylesheet" href="css/perguntas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Trabalho</title>
+</head>
+
+<body>
+    <header>
+        <a href="paginainicial.html" target="_blank"><img class="logo"
+                src="https://drive.google.com/uc?id=1SP0GUW-7gVjLfpKipeyzxOgZ3hshNlaG"></a>
+        <nav class="menu">
+            <a class="item" href="paginainicial.html">Início</a>
+            <a class="item" href="formulario.html">Formulário</a>
+            <a class="item" href="perguntas.html">Configurações</a>
+            <a class="item" href="index.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="perguntas">
+                <form id="myForm">
+                    <div class="question-box">
+                        <label>Pergunta 1:</label><br>
+                        <input type="text" name="question1">
+                        <button class="deletar" onclick="deleteQuestion('question1')"><i
+                                class="fa-regular fa-x"></i></button><br>
+                    </div>
+                    <div class="question-box">
+                        <label>Pergunta 2:</label><br>
+                        <input type="text" name="question2">
+                        <button class="deletar" onclick="deleteQuestion('question2')"><i
+                                class="fa-regular fa-x"></i></button><br>
+                    </div>
+                </form>
+                <div class="botoes">
+                    <button id="botaoadicionar" onclick="addQuestion()">Adicionar Pergunta</button>
+                    <button id="botaoenviar" onclick="submitQuestions()">Enviar</button>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="perguntas-armazenadas">
+                <form id="myform2">
+                    <div class="storage-box">
+                        <h2>Perguntas Armazenadas:</h2>
+                        <div id="perguntas-container">
+                        </div>
+                        <button id="mostrar-perguntas" onclick="mostrarPerguntas()" type="button"
+                            class="deletar">Mostrar
+                            Perguntas</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="inferior">
+        <center>
+            <h1 id="contato">Contatos</h1>
+            <a class="invisibleButton" href="cadastro.html">JPtechnologies | 2023</a>
+            <p>R. Dr. Gilberto Studart, 55 - Cocó, Fortaleza - CE (sala 805 - Torre Norte)
+            <p>CEP: 60192-010 | CNPJ: 35.721.625/0001-27 </p>
+            <p>Telefone: <a href="tel:+55 (85) 3085-4522">+55 (85) 3085-4522</a> | Email: <a
+                    href="mailto:jptechnologies.ce@gmail.com">jptechnologies.ce@gmail.com</a></p>
+            <br>
+            <p>Seja redirecionado à página de suporte:
+                <a id="sup"
+                    href="https://jptechnologies.com.br/index.php/suporte/">https://jptechnologies.com.br/index.php/suporte/</a>
+            </p>
+        </center>
+    </footer>
+    <script src="/perguntas.js"></script>
+</body>
+
+</html>

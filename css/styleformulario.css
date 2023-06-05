@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Kalam&family=Poppins:wght@300&family=Press+Start+2P&family=Roboto+Slab&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Heebo:wght@600&family=Roboto+Slab&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Dosis&family=Heebo:wght@600&family=Roboto+Slab&family=Titillium+Web&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 100%;
+}
+header {
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(186 234 250 / 58%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px;
+}
+h1 {
+    font-family: 'Heebo', sans-serif;
+}
+.logo {
+    height: 50px;
+}
+.item {
+    margin: 15px;
+    color: rgb(26, 60, 59);
+}
+.item:hover{
+    transition: 0.2s;
+    background-color: #cdcdcd59;
+    padding: 3px;
+    border-radius: 10px;
+}
+main {
+    background-color: #f5f5f5;
+    height: 700px;
+}
+#section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px 90px 0px;
+}
+#section .figure-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px 200px 30px;
+    background-color: rgba(190, 190, 190, 0.235);
+    border-radius: 20px;
+}
+#section .figure-container .caras {
+    display: flex;
+    padding-top: 30px;
+    gap: 60px;
+}
+figure {
+    width: 198px;
+    height: 198px;
+    cursor: pointer;
+}
+.pesquisa_de_satisfacao {
+    padding: 50px 0px 25px 0px;
+}
+.pergunta {
+    font-family: 'Dosis', sans-serif;
+    padding: 30px 0px 20px 0px;
+}
+.inferior {
+    background-color: rgb(186 234 250 / 58%);
+}
+#pessimo {
+    background-image: url("https://drive.google.com/uc?id=1H8s_TtVJz35cNA4RUNB5qez7hZrE5umc");
+    transition: background-image 0.4s;
+}
+#pessimo.pessimo-filled {
+    background-image: url("https://drive.google.com/uc?id=1Y4bRvnIj9VZ7qqyuaQLYq1n_mcmV0upG");
+    background-size: cover;
+}
+#pessimo:hover {
+    background-image: url("https://drive.google.com/uc?id=1Y4bRvnIj9VZ7qqyuaQLYq1n_mcmV0upG");
+    transition: background-image 0.4s;
+    background-size: cover;
+}
+#ruim {
+    background-image: url("https://drive.google.com/uc?id=1zaAWafBwW1mbr0_rbhVyTkSGlBaAsRg2");
+    transition: background-image 0.4s;
+}
+#ruim.ruim-filled {
+    background-image: url("https://drive.google.com/uc?id=1PJacHBRX6y2r5pTc-Yns3ZVRfB_JLhjp");
+    background-size: cover;
+}
+#ruim:hover {
+    background-image: url("https://drive.google.com/uc?id=1PJacHBRX6y2r5pTc-Yns3ZVRfB_JLhjp");
+    transition: background-image 0.4s;
+    background-size: cover;
+}
+#regular {
+    background-image: url("https://drive.google.com/uc?id=17XIeBn9WvUQTe7x-HDiPb7SMfjHTo8MB");
+    transition: background-image 0.4s;
+}
+#regular.regular-filled {
+    background-image: url("https://drive.google.com/uc?id=1GLRvoTIuzDHy5eu_mn4n86OP-8hpsi-V");
+    background-size: cover;
+}
+#regular:hover {
+    background-image: url("https://drive.google.com/uc?id=1GLRvoTIuzDHy5eu_mn4n86OP-8hpsi-V");
+    transition: background-image 0.4s;
+    background-size: cover;
+}
+#bom {
+    background-image: url("https://drive.google.com/uc?id=1J3i4NzQzCORL0Q7rU_55N6scHSsngS8l");
+    transition: background-image 0.4s;
+}
+#bom.bom-filled {
+    background-image: url("https://drive.google.com/uc?id=1w8U7nVqw8LnLarH97NTeC-fQb7yyB9Pi");
+    background-size: cover;
+}
+#bom:hover {
+    background-image: url("https://drive.google.com/uc?id=1w8U7nVqw8LnLarH97NTeC-fQb7yyB9Pi");
+    transition: background-image 0.4s;
+    background-size: cover;
+}
+#otimo {
+    background-image: url("https://drive.google.com/uc?id=12UN_gYtNB8ZPYbkCclXwaDGTgpeCmFV-");
+    transition: background-image 0.4s;
+}
+#otimo.otimo-filled {
+    background-image: url("https://drive.google.com/uc?id=1CtmcYX1epeDh71CRr3FCbCn1hMKXxeqg");
+    background-size: cover;
+}
+#otimo:hover {
+    background-image: url("https://drive.google.com/uc?id=1CtmcYX1epeDh71CRr3FCbCn1hMKXxeqg");
+    transition: background-image 0.4s;
+    background-size: cover;
+}
+.filled {
+    background-color: rgb(119 213 245 / 51%);
+    background-image: none;
+}
+#meuForm{
+    position: absolute;
+    top: 550px;
+    left: 500px;
+}
+form #text {
+    height: 100px;
+    width: 800px;
+    overflow: hidden;
+    float: right;
+}
+form #text textarea{
+    height: 100px;
+    width: 800px;
+    outline: none;
+    font-size: 15px;
+    resize: none;  
+    border-radius: 10px;   
+    border: none;   
+    padding: 20px;   
+    font-size: 16px;   
+    background: #add8e6; 
+}
+form #btn button{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #add8e6 0%, #0186F9 100%);   
+    border: none;   
+    border-radius: 10px;   
+    padding: 10px 20px;   
+    color: white;   
+    font-size: 16px;   
+    cursor: pointer;   
+    transition: opacity 0.3s ease; 
+}
+.form-container {  
+    padding: 40px 0px 90px 0px; 
+    display: flex;   
+    flex-direction: row;   
+    align-items: center;   
+    gap: 20px; 
+    justify-content: center;
+    display: bottom;
+} 
+#btn:hover {   
+    opacity: 0.8; 
+}
+.hidden{
+    display: none;
+}
+#post{
+    font-family: 'Heebo', sans-serif;
+    position: relative;
+    bottom: 200px;
+    left: 320px;
+    font-size: 40pt;
+    top: 00px;
+    left: 0px;
+}
+.hidden {
+    display: none;
+}
+#edit{
+    background: linear-gradient(to bottom, #add8e6 0%, #0186F9 100%);   
+    border: none;   
+    border-radius: 10px;   
+    padding: 10px 20px;   
+    color: white;   
+    font-size: 16px;   
+    cursor: pointer;   
+    transition: opacity 0.3s ease; 
+}
+#contato {
+    font-size: 40px;
+    padding: 0px 0px 20px 0px;
+}
+footer {
+    padding: 50px;
+    font-size: 18px;
+}
+#sup{
+    color: #0000EE;
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Kalam&family=Poppins:wght@300&family=Press+Start+2P&family=Roboto+Slab&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Heebo:wght@600&family=Roboto+Slab&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Dosis&family=Heebo:wght@600&family=Roboto+Slab&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&family=Monomaniac+One&family=Oswald:wght@300&family=Playfair&display=swap');
+
+* {
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+text-decoration: none;
+}
+body {
+font-size: 100%;
+}
+header {
+font-family: 'Roboto Slab', serif;
+background: rgb(186 234 250 / 58%);
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+padding: 18px;
+}
+h1 {
+font-family: 'Heebo', sans-serif;
+}
+.logo {
+height: 50px;
+}
+.item {
+margin: 15px;
+color: rgb(26, 60, 59);
+border-radius: 25px;
+padding: 10px;
+}
+main {
+background-color: #f5f5f5;
+padding-left: 5px
+}
+section {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+padding: 18px 0px 65px 0px;
+}
+figure {
+width: 198px;
+height: 195px;
+cursor: pointer;
+}
+.texto{
+width: 100px;
+padding-left:4px !important;
+color: #858585;
+border: 2px solid #858585;
+border-radius:10px;
+width:180px;
+}
+.inferior {
+background-color: rgb(186 234 250 / 58%);
+}
+#contato {
+font-size: 40px;
+padding: 0px 0px 20px 0px;
+}
+footer {
+padding: 50px;
+font-size: 18px;
+}
+#sup {
+color: #0000EE;
+}
+.invisibleButton {
+background: none;
+border: none;
+padding: 0;
+font: inherit;
+cursor: default;
+outline: inherit;
+color: inherit; 
+}
+.button-container {
+display: flex;
+justify-content: center;
+gap: 200px;
+margin-top: -90px;
+padding: 180px 170px 130px 120px;
+} 
+.button {    font-size: 16px;
+padding: 80px 40px;
+background-color: #f5f5f5;
+color: black;
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease;
+border-radius: 30px;
+}
+.button:hover {
+background-color: #66666645;
+}

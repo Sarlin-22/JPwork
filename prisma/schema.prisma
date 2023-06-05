@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model avaliacoes {
+  avaliacao_id   Int             @id @default(autoincrement())
+  usuario_id     Int?
+  resultado      avaliacao_enum?
+  comentario     String?
+  data_avaliacao DateTime?       @default(now()) @db.Timestamptz(6)
+  usuarios       usuarios?       @relation(fields: [usuario_id], references: [usuario_id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model Perguntas {
+  id          Int     @id @default(autoincrement())
+  pergunta    String
+  usuario_id  Int
+  usuario     usuarios @relation(fields: [usuario_id], references: [usuario_id])
+  usuario_nome String
+
+  @@map(name: "perguntas")
+}
+
+model usuarios {
+  usuario_id   Int          @id @default(autoincrement())
+  nome         String?      @db.VarChar(200)
+  email        String       @unique @db.VarChar(150)
+  senha        String       @db.VarChar(100)
+  data_criacao DateTime?    @default(now()) @db.Timestamptz(6)
+  avaliacoes   avaliacoes[]
+  perguntas    Perguntas[]
+}
+
+enum avaliacao_enum {
+  pessimo
+  ruim
+  normal
+  bom
+  otimo
+}
