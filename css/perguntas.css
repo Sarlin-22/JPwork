@@ -59,13 +59,14 @@ input[type="text"]:focus {
   .item {
     margin: 15px;
     color: rgb(26, 60, 59);
-  }
-  .item:hover{
-    transition: 0.2s;
-    background-color: #cdcdcd59;
-    padding: 3px;
-    border-radius: 10px;
-  }
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #91d0fa;
+    }
+    
+    .item:hover{
+        background-color: #66666645;
+    }
   header {
     font-family: 'Roboto Slab', serif;
     background-color: rgb(186 234 250 / 58%);
@@ -173,9 +174,27 @@ body{
     margin-top: 20px;
     padding: 20px;
 }
+
 .storage-box h2 {
     margin-bottom: 20px;
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     color: white;
 }
+
+#mostrar-perguntas{
+  background-color: #858585;
+  padding: 15px;
+  font-size: 15px;
+  border: 2px solid black;
+  border-radius: 15px;
+  box-shadow: -2px 2px 0 rgb(3,0,22);
+  cursor:pointer;
+  letter-spacing: 1px;
+}
+
+#mostrar-perguntas:hover{
+  box-shadow: -4px 4px 0 rgb(3,0,22);
+  filter: brightness(.8);
+}
+

@@ -17,14 +17,14 @@ function exibirForm(figure, state) {
     document.getElementById("btn").classList.add("hidden");
     document.getElementById("post").classList.remove("hidden");
     document.getElementById("pergunta").classList.add("hidden");
-    document.getElementById("section").classList.add("hidden"); // Adiciona a classe "hidden" à div com id "section"
+    document.getElementById("section").classList.add("hidden"); 
 }
   function editarForm() {
     document.getElementById("text").classList.remove("hidden");
     document.getElementById("btn").classList.remove("hidden");
     document.getElementById("post").classList.add("hidden");
     document.getElementById("pergunta").classList.remove("hidden");
-    document.getElementById("section").classList.remove("hidden"); // Remove a classe "hidden" da div com id "section"
+    document.getElementById("section").classList.remove("hidden");
     
       // Limpar o conteúdo do textarea
       document.getElementById("box").value = "";

@@ -25,13 +25,18 @@ h1 {
 font-family: 'Heebo', sans-serif;
 }
 .logo {
-height: 50px;
+height: 70px;
 }
 .item {
 margin: 15px;
 color: rgb(26, 60, 59);
 border-radius: 25px;
 padding: 10px;
+background-color: #91d0fa;
+}
+
+.item:hover{
+    background-color: #66666645;
 }
 main {
 background-color: #f5f5f5;
@@ -55,8 +60,11 @@ padding-left:4px !important;
 color: #858585;
 border: 2px solid #858585;
 border-radius:10px;
-width:180px;
+width:400px;
+text-align:center;
+margin-left:38%;
 }
+
 .inferior {
 background-color: rgb(186 234 250 / 58%);
 }
@@ -89,7 +97,7 @@ padding: 180px 170px 130px 120px;
 } 
 .button {    font-size: 16px;
 padding: 80px 40px;
-background-color: #f5f5f5;
+background-color: #91d0fa;
 color: black;
 border: none;
 cursor: pointer;
@@ -98,4 +106,8 @@ border-radius: 30px;
 }
 .button:hover {
 background-color: #66666645;
+}
+
+.frase {
+    font-size: 25px;
 }

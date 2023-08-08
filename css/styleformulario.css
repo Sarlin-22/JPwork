@@ -29,13 +29,14 @@ h1 {
 .item {
     margin: 15px;
     color: rgb(26, 60, 59);
-}
-.item:hover{
-    transition: 0.2s;
-    background-color: #cdcdcd59;
-    padding: 3px;
-    border-radius: 10px;
-}
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #91d0fa;
+    }
+    
+    .item:hover{
+        background-color: #66666645;
+    }
 main {
     background-color: #f5f5f5;
     height: 700px;
